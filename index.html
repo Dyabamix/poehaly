@@ -13,27 +13,29 @@
 				<img src="#" alt="Device">
 			</a>
 		</p>
+		
 		<div>
-		<h2>Поиск по сайту</h2>
+		<h2 class="visually-hidden">Поиск по сайту</h2>
 		<!--Здесь будет форма-->
 		</div>
 		
-		<ul class="user-menu">
+		<ul class="main-user-menu">
 			<li class="user"><a href="#">User_name</a></li>
-			<li><a href="#">Войти</a></li>
-			<li><a href="#">Выйти</a></li>
-			<li><a href="#">Сравнить</a></li>
-			<li><a href="#">Корзина</a></li>
+			<li class="main-user-menu-item"><a href="#">Войти</a></li>
+			<li class="main-user-menu-item"><a href="#">Выйти</a></li>
+			<li class="main-user-menu-item"><a href="#">Сравнить</a></li>
+			<li class="main-user-menu-item"><a href="#">Корзина</a></li>
 		</ul>
-		<ul>
+		
+		<ul class="catalog-scroll">
 			<li><a href="#">Каталог товаров</a>
-				<ul class="catalog-menu">
-					<li class="catalog-menu-category"><a href="#">Виртуальная реальность</a></li>
-					<li class="catalog-menu-category"><a href="#">Моноподы для селфи</a></li>
-					<li class="catalog-menu-category"><a href="#">Экшн-камеры</a></li>
-					<li class="catalog-menu-category"><a href="#">Фитнес-браслеты</a></li>
-					<li class="catalog-menu-category"><a href="#">Умные часы</a></li>
-					<li class="catalog-menu-category"><a href="#">Квадрокоптеры</a></li>
+				<ul class="catalog-scroll-menu">
+					<li class="catalog-scroll-menu-category"><a href="#">Виртуальная реальность</a></li>
+					<li class="catalog-scroll-menu-category"><a href="#">Моноподы для селфи</a></li>
+					<li class="catalog-scroll-menu-category"><a href="#">Экшн-камеры</a></li>
+					<li class="catalog-scroll-menu-category"><a href="#">Фитнес-браслеты</a></li>
+					<li class="catalog-scroll-menu-category"><a href="#">Умные часы</a></li>
+					<li class="catalog-scroll-menu-category"><a href="#">Квадрокоптеры</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -50,7 +52,7 @@
 	
 		<article class="preview-product">
 		<h2 class="visually-hidden">Превью товаров</h2>
-			<ul>
+			<ul class="preview-product-list">
 				<li class="preview-product-item">
 					<p class="preview-product-photo">
 						<img src="#" alt="Фото товара">
@@ -58,7 +60,7 @@
 					
 					<section class="preview-product-info">
 						<h3 class="preview-product-namber">01</h3>
-						<b class="slogan">Делай селфи, как Бен Стиллер!</b>
+						<b class="preview-product-slogan">Делай селфи, как Бен Стиллер!</b>
 						<p class="preview-product-text">
 						Самая длинная палка для селфи доступна в нашем магазине.
 						Восемь (Восемь, Карл!) метров дляной и весом всего 5 килограмм.
@@ -90,10 +92,11 @@
 								<td class="characteristics-td-title">Материал</td>
 							</tr>
 						</table>
+					</section>
 								
 				</li>
 				
-				<li>
+				<li  class="preview-product-item">
 				
 					<p class="preview-product-photo">
 						<img src="#" alt="Фото товара 2">
@@ -101,7 +104,7 @@
 					
 					<section class="preview-product-info">
 						<h3 class="preview-product-namber">02</h3>
-						<b class="slogan">Худеем правильно!</b>
+						<b class="preview-product-slogan">Худеем правильно!</b>
 						<p class="preview-product-text">
 						Мотивирующие фитнес-браслеты помогут найти в себе силы
 						не пропускать занятия и соблюдать диету.
@@ -129,16 +132,17 @@
 								<td class="characteristics-td-title">Без подзарядки</td>
 							</tr>
 						</table>
+					</section>
 				</li>
 				
-				<li>
+				<li  class="preview-product-item">
 					<p class="preview-product-photo">
 						<img src="#" alt="Фото товара">
 					</p>
 					
 					<section class="preview-product-info">
 						<h3 class="preview-product-namber">03</h3>
-						<b class="slider">Пархает как бабочка, жалит как пчела!</b>
+						<b class="preview-product-slider">Пархает как бабочка, жалит как пчела!</b>
 						<p class="preview-product-text">
 						Этот облачный, на первый взгляд, квадрокоптер оснащен
 						мощным лазером, замаскерованным под стандартную камеру.
@@ -168,6 +172,7 @@
 								<td class="characteristics-td-title">Радиус поражения</td>
 							</tr>
 						</table>
+					</section>
 				</li>
 			</ul>
 		</article>
@@ -176,7 +181,7 @@
 		<h2 class="visually-hidden">Категории товаров</h2>
 			<ul class="categories-list">
 				<li class="categories-item">
-						<h3><a href="#">Виртуальная реальность</a></h3>
+						<h3 class="categories-item-title"><a href="#">Виртуальная реальность</a></h3>
 						<p class="categories-photo">
 						<a href="#"> 
 							<img src="#" rel="Виртуальная реальность">
@@ -185,7 +190,7 @@
 				</li>
 				
 				<li class="categories-item">
-						<h3><a href="#">Моноподы для селфи</a></h3>
+						<h3 class="categories-item-title"><a href="#">Моноподы для селфи</a></h3>
 						<p class="categories-photo">
 						<a href="#">
 							<img src="#" rel="Моноподы для селфи">
@@ -194,7 +199,7 @@
 				</li>
 				
 				<li class="categories-item">
-						<h3><a href="#">Экшн-камеры</a></h3>
+						<h3 class="categories-item-title"><a href="#">Экшн-камеры</a></h3>
 						<p class="categories-photo">
 						<a href="#">
 							<img src="#" rel="Экшн-камеры">
@@ -203,7 +208,7 @@
 				</li>
 				
 				<li class="categories-item">
-						<h3><a href="#">Фитнес-браслеты</a></h3>
+						<h3 class="categories-item-title"><a href="#">Фитнес-браслеты</a></h3>
 						<p class="categories-photo">
 						<a href="#">
 							<img src="#" rel="Фитнес-браслеты">
@@ -212,7 +217,7 @@
 				</li>
 				
 				<li class="categories-item">
-						<h3><a href="#">Умные часы</a></h3>
+						<h3 class="categories-item-title"><a href="#">Умные часы</a></h3>
 						<p class="categories-photo">
 						<a href="#">
 							<img src="#" rel="Умные часы">
@@ -221,7 +226,7 @@
 				</li>
 				
 				<li class="categories-item">
-						<h3><a href="#">Квадрокоптеры</a></h3>
+						<h3 class="categories-item-title"><a href="#">Квадрокоптеры</a></h3>
 						<p class="categories-photo">
 						<a href="#">
 							<img src="#" rel="Квадрокоптеры">
@@ -245,6 +250,7 @@
 				<li class="services-scroll-item">
 					<a href="#">Кредит</a>
 				</li>
+			</ul>
 		</section>
 		
 		<section class="services">
@@ -255,7 +261,9 @@
 					<p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему
 					подъезду совершенно бесплатно! Ведь мы не плохо
 					заработаем, поднимая его на ваш этаж.</p>
-					<img src="#" alt="Логотип услуги" class="services-logo">
+					<p class="services-logo">
+						<img src="#" alt="Логотип услуги">
+					</p>
 				</li>
 				
 				<li class="services-item">
@@ -263,7 +271,9 @@
 					<p class="services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — 
 					не переживайте, мы выдадим вам новый.
 					Товар, не дом, конечно же.</p>
-					<img src="" alt="" class="services-logo">
+					<p class="services-logo">
+						<img src="#" alt="Логотип услуги">
+					</p>
 				</li>
 				
 				<li class="services-item">
@@ -271,7 +281,9 @@
 					<p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты 
 					подберут для вас наиболее выгодные 
 					условия кредита. Выгодные для нашего банка, разумеется.</p>
-					<img src="" alt="" class="services-logo">
+					<p class="services-logo">
+						<img src="#" alt="Логотип услуги">
+					</p>
 				</li>
 			</ul>
 		</section>
@@ -318,20 +330,20 @@
 			</a>
 		</p>
 		
-		<ul class="user-menu">
+		<ul class="footer-user-menu">
 			<li class="user"><a href="#">User_name</a></li>
-			<li><a href="#">Войти</a></li>
-			<li><a href="#">Выйти</a></li>
-			<li><a href="#">Сравнить</a></li>
-			<li><a href="#">Корзина</a></li>
+			<li class="footer-user-menu-item"><a href="#">Войти</a></li>
+			<li class="footer-user-menu-item"><a href="#">Выйти</a></li>
+			<li class="footer-user-menu-item"><a href="#">Сравнить</a></li>
+			<li class="footer-user-menu-item"><a href="#">Корзина</a></li>
 		</ul>
 		
 		<p class="footer-address">г. Москва, ул. Строителей, 15</p>
 		
 		<ul class="footer-site-menu">
-			<li><a href="#">Доставка</a></li>
-			<li><a href="#">Гарантия</a></li>
-			<li><a href="#">Контакты</a></li>
+			<li class="footer-site-menu-item"><a href="#">Доставка</a></li>
+			<li class="footer-site-menu-item"><a href="#">Гарантия</a></li>
+			<li class="footer-site-menu-item"><a href="#">Контакты</a></li>
 		</ul>
 		
 		<p class="tel">Тел.: +7 (495)495-95-95</p>
