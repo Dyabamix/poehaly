@@ -273,7 +273,19 @@
 	
 	<section class="login">
 		<h2 class="visually-hidden">Форма входа в учетную запись</h2>
-		<form action="#"></form>
+		<form action="#" type="post">
+		
+			<label for="name">Ваше имя:</label>
+			<input type="text" id="name" value="Имя Фамилия">
+
+			<label for="e-mail">Ваш e-mail:</label>
+			<input type="text" id="e-mail" value="e-mail@example.com">
+			
+			<label for="text">Текст письма:</label>
+			<textarea id="text">В свободной форме</textarea>
+			
+			<button type="submit">Отправить</button>
+		</form>
 		<p class="login-close"><a href="#">X</a></p>
 	</section>
 	
