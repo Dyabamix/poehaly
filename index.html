@@ -2,7 +2,6 @@
 <html lang="ru">
 	<head>
 	<meta charset="utf-8">
-	<meta http-equiv="Refresh" content="5">
 		<title>Device</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
@@ -18,34 +17,41 @@
 		<div>
 		<h2 class="visually-hidden">Поиск по сайту</h2>
 		<!--Здесь будет форма-->
+			<form action="#" class="search">
+				<input type="search" placeholder="Поиск по сайту">
+				<button type="submit">Поиск</button>
+			</form>
 		</div>
 		
-		<ul class="main-user-menu">
-			<li class="user"><a href="#">User_name</a></li>
-			<li class="main-user-menu-item"><a href="#">Войти</a></li>
-			<li class="main-user-menu-item"><a href="#">Выйти</a></li>
-			<li class="main-user-menu-item"><a href="#">Сравнить</a></li>
-			<li class="main-user-menu-item"><a href="#">Корзина</a></li>
-		</ul>
+		<nav class="main-navigation">
+			<h2 class="visually-hidden">Навигация по сайту</h2>
+			<ul class="main-user-menu">
+				<li class="user"><a href="#">User_name</a></li>
+				<li class="main-user-menu-item"><a href="#">Войти</a></li>
+				<li class="main-user-menu-item"><a href="#">Выйти</a></li>
+				<li class="main-user-menu-item"><a href="#">Сравнить</a></li>
+				<li class="main-user-menu-item"><a href="#">Корзина</a></li>
+			</ul>
+			
+			<ul class="catalog-scroll">
+				<li><a href="#">Каталог товаров</a>
+					<ul class="catalog-scroll-menu">
+						<li class="catalog-scroll-menu-category"><a href="#">Виртуальная реальность</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Моноподы для селфи</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Экшн-камеры</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Фитнес-браслеты</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Умные часы</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Квадрокоптеры</a></li>
+					</ul>
+				</li>
+			</ul>
 		
-		<ul class="catalog-scroll">
-			<li><a href="#">Каталог товаров</a>
-				<ul class="catalog-scroll-menu">
-					<li class="catalog-scroll-menu-category"><a href="#">Виртуальная реальность</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Моноподы для селфи</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Экшн-камеры</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Фитнес-браслеты</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Умные часы</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Квадрокоптеры</a></li>
-				</ul>
-			</li>
-		</ul>
-	
-		<ul class="site-menu">
-			<li><a href="#">Доставка</a></li>
-			<li><a href="#">Гарантия</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
+			<ul class="site-menu">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
 	</header>
 	
 	
@@ -56,18 +62,24 @@
 			<ul class="preview-product-list">
 				<li class="preview-product-item">
 					
-						<img src="#" alt="Фото товара">
+						<img src="img/product-preview/product-1.png" width="384" height="486" alt="Фото товара">
 					
 					
 					<section class="preview-product-info">
-						<h3 class="visually-hidden">Товар №1</h3>
+						<h3 class="visually-hidden">Товар №1 Длинная селфи палка.</h3>
+						
 						<b class="preview-product-slogan">Делай селфи, как Бен Стиллер!</b>
+						
 						<span class="number-product">01</span>
+						
 						<p class="preview-product-text">
 						Самая длинная палка для селфи доступна в нашем магазине.
 						Восемь (Восемь, Карл!) метров дляной и весом всего 5 килограмм.
 						</p>
+						
 						<a class="button" href="#">Подробнее</a>
+						
+						<h4 class="visually-hidden">Характеристики товара</h4>
 						
 						<table class="characteristics">
 							<tr class="characteristics-tr">
@@ -75,65 +87,83 @@
 								<td class="characteristics-td">5 кг</td>
 								<td class="characteristics-td">Карбон</td>
 							</tr>
+							
 							<tr class="characteristics-tr-title">
 								<td class="characteristics-td-title">Длина палки</td>
 								<td class="characteristics-td-title">Вес палки</td>
 								<td class="characteristics-td-title">Материал</td>
 							</tr>
 						</table>
+						
 					</section>
 								
 				</li>
 				
 				<li  class="preview-product-item">
 				
-						<img src="#" alt="Фото товара 2">
+						<img src="img/product-preview/product-2.png" width="345" height="482" alt="Фото товара 2">
 					
 					<section class="preview-product-info">
-						<h3 class="visually-hidden">Товар №2</h3>
+						<h3 class="visually-hidden">Товар №2 Фитнес-браслет.</h3>
+						
 						<b class="preview-product-slogan">Худеем правильно!</b>
+						
 						<span class="number-product">02</span>
+						
 						<p class="preview-product-text">
 						Мотивирующие фитнес-браслеты помогут найти в себе силы
 						не пропускать занятия и соблюдать диету.
 						</p>
+						
 						<a class="button" href="#">Подробнее</a>
+						
+						<h4 class="visually-hidden">Характеристики товара</h4>
 						
 						<table class="characteristics">
 							<tr class="characteristics-tr">
 								<td class="characteristics-td">48 часов</td>
 							</tr>
+							
 							<tr class="characteristics-tr-title">
 								<td class="characteristics-td-title">Без подзарядки</td>
 							</tr>
 						</table>
+						
 					</section>
 				</li>
 				
 				<li  class="preview-product-item">
 
-						<img src="#" alt="Фото товара">
+						<img src="img/product-preview/product-3.png" width="526" height="334" alt="Фото товара">
 					
 					<section class="preview-product-info">
-						<h3 class="visually-hidden">Товар №3</h3>
+						<h3 class="visually-hidden">Товар №3 Квадрокоптер.</h3>
+						
 						<b class="preview-product-slider">Пархает как бабочка, жалит как пчела!</b>
+						
 						<span class="number-product">03</span>
+						
 						<p class="preview-product-text">
 						Этот облачный, на первый взгляд, квадрокоптер оснащен
 						мощным лазером, замаскерованным под стандартную камеру.
 						</p>
+						
 						<a class="button" href="#">Подробнее</a>
+						
+						<h4 class="visually-hidden">Характеристики товара</h4>
 						
 						<table class="characteristics">
 							<tr class="characteristics-tr">
 								<td class="characteristics-td">800 м</td>
 								<td class="characteristics-td">50 м</td>
 							</tr>
+							
 							<tr class="characteristics-tr-title">
 								<td class="characteristics-td-title">Дальность полета</td>
 								<td class="characteristics-td-title">Радиус поражения</td>
 							</tr>
 						</table>
+						
 					</section>
 				</li>
 			</ul>
@@ -202,10 +232,10 @@
 		
 		<section class="brands">
 			<h2 class="visually-hidden">Список брендов</h2>
-				<a href="#" class="brands-link">1</a>
-				<a href="#" class="brands-link">2</a>
-				<a href="#" class="brands-link">3</a>
-				<a href="#" class="brands-link">4</a>
+				<a href="https://www.dji.com/ru" class="brands-link">DJI</a>
+				<a href="http://www.sp-gadgets.com/" class="brands-link">SP Gadgets</a>
+				<a href="https://ru.gopro.com/" class="brands-link">GoPro</a>
+				<a href="https://www.vive.com/ru/" class="brands-link">VIVE</a>
 		</section>
 		
 		<section class="about-us">
@@ -228,6 +258,7 @@
 			проверить работоспособность покупки. Всякое бывает.</p>
 			<section class="maps">
 			<h2 class="visually-hidden">Карта</h2>
+			<img src="img/map-mini.jpg" width="560" height="222" alt="Карта">
 			</section>
 			<a href="#" class="bottom">Напишите нам</a>
 		</section>
@@ -273,16 +304,16 @@
 	
 	<section class="write-us">
 		<h2 class="visually-hidden">Форма для отправки обращения</h2>
-		<form action="#" type="post">
-			<div class="form-item-name"
+		<form action="#">
+			<div class="form-item-name">
 				<label for="name">Ваше имя:</label>
 				<input type="text" id="name" placeholder="Имя Фамилия">
 			</div>
-			<div class="form-item-e-mail"
+			<div class="form-item-e-mail">
 				<label for="e-mail">Ваш e-mail:</label>
 				<input type="text" id="e-mail" placeholder="e-mail@example.com">
 			</div>
-			<div class="form-item-text"	
+			<div class="form-item-text">
 				<label for="text">Текст письма:</label>
 				<textarea id="text" placeholder="В свободной форме" rows="10" cols="100"></textarea>
 			</div>
@@ -294,6 +325,7 @@
 	
 	<section class="map-modal">
 		<h2 class="visually-hidden">Всплывающая карта</h2>
+		<img src="img/map.jpg" width="960" height="559" alt="Карта">
 		<p class="map-modal-close"><a href="#">X</a></p>
 	</section>
 	
