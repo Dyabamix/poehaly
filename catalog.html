@@ -2,12 +2,10 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="Refresh" content="5">
 		<title>Device-Каталог товаров</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 <body>
-	
 	
 	<header>
 		<h1 class="logo">
@@ -19,34 +17,41 @@
 		<div>
 		<h2 class="visually-hidden">Поиск по сайту</h2>
 		<!--Здесь будет форма-->
+			<form action="#" class="search">
+				<input type="search" placeholder="Поиск по сайту">
+				<button type="submit">Поиск</button>
+			</form>
 		</div>
 		
-		<ul class="main-user-menu">
-			<li class="user"><a href="#">User_name</a></li>
-			<li class="main-user-menu-item"><a href="#">Войти</a></li>
-			<li class="main-user-menu-item"><a href="#">Выйти</a></li>
-			<li class="main-user-menu-item"><a href="#">Сравнить</a></li>
-			<li class="main-user-menu-item"><a href="#">Корзина</a></li>
-		</ul>
+		<nav class="main-navigation">
+			<h2 class="visually-hidden">Навигация по сайту</h2>
+			<ul class="main-user-menu">
+				<li class="user"><a href="#">User_name</a></li>
+				<li class="main-user-menu-item"><a href="#">Войти</a></li>
+				<li class="main-user-menu-item"><a href="#">Выйти</a></li>
+				<li class="main-user-menu-item"><a href="#">Сравнить</a></li>
+				<li class="main-user-menu-item"><a href="#">Корзина</a></li>
+			</ul>
+			
+			<ul class="catalog-scroll">
+				<li><a href="#">Каталог товаров</a>
+					<ul class="catalog-scroll-menu">
+						<li class="catalog-scroll-menu-category"><a href="#">Виртуальная реальность</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Моноподы для селфи</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Экшн-камеры</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Фитнес-браслеты</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Умные часы</a></li>
+						<li class="catalog-scroll-menu-category"><a href="#">Квадрокоптеры</a></li>
+					</ul>
+				</li>
+			</ul>
 		
-		<ul class="catalog-scroll">
-			<li><a href="#">Каталог товаров</a>
-				<ul class="catalog-scroll-menu">
-					<li class="catalog-scroll-menu-category"><a href="#">Виртуальная реальность</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Моноподы для селфи</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Экшн-камеры</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Фитнес-браслеты</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Умные часы</a></li>
-					<li class="catalog-scroll-menu-category"><a href="#">Квадрокоптеры</a></li>
-				</ul>
-			</li>
-		</ul>
-	
-		<ul class="site-menu">
-			<li><a href="#">Доставка</a></li>
-			<li><a href="#">Гарантия</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
+			<ul class="site-menu">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
 	</header>
 	
 	
@@ -120,13 +125,14 @@
 			</ul>
 				
 			<section class="product-scroll-page">
+				<h2 class="visually-hidden">Каталог товаров</h2>
 				<ul class="product-scroll-page-list">
 					<li class="product-scroll-page-item">
 						
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-1.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
@@ -148,7 +154,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-2.jpg" alt="Любительская селфи палка">
 									</a>					
 								</p>
 									
@@ -169,7 +175,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-3.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
@@ -190,7 +196,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-4.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
@@ -215,7 +221,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-1.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
@@ -236,7 +242,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-2.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 								
@@ -257,7 +263,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-3.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
@@ -278,7 +284,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-4.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
@@ -302,7 +308,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-1.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
@@ -323,7 +329,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-2.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
@@ -344,7 +350,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-3.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
@@ -365,7 +371,7 @@
 							<article class="product-scroll-item">
 								<p class="product-scroll-item-photo">
 									<a href="#">
-										<img src="#" alt="Любительская селфи палка">
+										<img src="img/product-4.jpg" alt="Любительская селфи палка">
 									</a>							
 								</p>
 									
