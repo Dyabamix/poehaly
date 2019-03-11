@@ -16,7 +16,6 @@
 		
 		<div>
 		<h2 class="visually-hidden">Поиск по сайту</h2>
-		<!--Здесь будет форма-->
 			<form action="#" class="search">
 				<input type="search" placeholder="Поиск по сайту">
 				<button type="submit">Поиск</button>
@@ -62,7 +61,7 @@
 			<ul class="preview-product-list">
 				<li class="preview-product-item">
 					
-						<img src="img/product-preview/product-1.png" width="384" height="486" alt="Фото товара">
+						<img src="img/product-preview/product-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
 					
 					
 					<section class="preview-product-info">
@@ -77,7 +76,7 @@
 						Восемь (Восемь, Карл!) метров дляной и весом всего 5 килограмм.
 						</p>
 						
-						<a class="button" href="#">Подробнее</a>
+						<a class="link-button" href="#">Подробнее</a>
 						
 						<h4 class="visually-hidden">Характеристики товара</h4>
 						
@@ -89,9 +88,9 @@
 							</tr>
 							
 							<tr class="characteristics-tr-title">
-								<td class="characteristics-td-title">Длина палки</td>
-								<td class="characteristics-td-title">Вес палки</td>
-								<td class="characteristics-td-title">Материал</td>
+								<th class="characteristics-td-title">Длина палки</th>
+								<th class="characteristics-td-title">Вес палки</th>
+								<th class="characteristics-td-title">Материал</th>
 							</tr>
 						</table>
 						
@@ -101,7 +100,7 @@
 				
 				<li  class="preview-product-item">
 				
-						<img src="img/product-preview/product-2.png" width="345" height="482" alt="Фото товара 2">
+						<img src="img/product-preview/product-2.png" width="345" height="482" alt="Фитнес браслет">
 					
 					<section class="preview-product-info">
 						<h3 class="visually-hidden">Товар №2 Фитнес-браслет.</h3>
@@ -125,7 +124,7 @@
 							</tr>
 							
 							<tr class="characteristics-tr-title">
-								<td class="characteristics-td-title">Без подзарядки</td>
+								<th class="characteristics-td-title">Без подзарядки</th>
 							</tr>
 						</table>
 						
@@ -134,7 +133,7 @@
 				
 				<li  class="preview-product-item">
 
-						<img src="img/product-preview/product-3.png" width="526" height="334" alt="Фото товара">
+						<img src="img/product-preview/product-3.png" width="526" height="334" alt="Квадрокоптер">
 					
 					<section class="preview-product-info">
 						<h3 class="visually-hidden">Товар №3 Квадрокоптер.</h3>
@@ -159,14 +158,19 @@
 							</tr>
 							
 							<tr class="characteristics-tr-title">
-								<td class="characteristics-td-title">Дальность полета</td>
-								<td class="characteristics-td-title">Радиус поражения</td>
+								<th class="characteristics-td-title">Дальность полета</th>
+								<th class="characteristics-td-title">Радиус поражения</th>
 							</tr>
 						</table>
 						
 					</section>
 				</li>
 			</ul>
+			<p class="button-page-preview">
+				<button class="button-page-preview-item" aria-label="Товар №1">1</button>
+				<button class="button-page-preview-item" aria-label="Товар №2">2</button>
+				<button class="button-page-preview-item" aria-label="Товар №3">3</button>
+			</p>
 			
 		</article>
 		
@@ -185,19 +189,13 @@
 		<section class="services-box">
 			<section class="services-scroll">
 			<h2 class="visually-hidden">Перечень услуг</h2>
-				<ul class="services-scroll-list">
-					<li class="services-scroll-item">
-						<a href="#" class="services-scroll-link">Доставка</a>
-					</li>
-						
-					<li class="services-scroll-item">
-						<a href="#" class="services-scroll-link">Гарантия</a>
-					</li>
-						
-					<li class="services-scroll-item">
-						<a href="#" class="services-scroll-link">Кредит</a>
-					</li>
-				</ul>
+				
+						<button class="link-button services-scroll-button">Доставка</button>
+					
+						<button class="link-button services-scroll-button">Гарантия</button>
+					
+						<button class="link-button services-scroll-button">Кредит</button>
+					
 			</section>
 				
 			<section class="services">
@@ -249,18 +247,19 @@
 				<li class="about-us-tc-item">Автотрейдинг</li>
 				<li class="about-us-tc-item">ЖелДорЭкспедиция</li>
 			</ul>
-			<a href="#" class="bottom">Подробнее о нас</a>
+			<a href="#" class="link-button">Подробнее о нас</a>
 		</section>
 		
 		<section class="contacts">
 			<h2 class="contacts-title">Контакты</h2>
 			<p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
 			проверить работоспособность покупки. Всякое бывает.</p>
-			<section class="maps">
-			<h2 class="visually-hidden">Карта</h2>
-			<img src="img/map-mini.jpg" width="560" height="222" alt="Карта">
-			</section>
-			<a href="#" class="bottom">Напишите нам</a>
+			
+			<a href="#" class="link-map">
+				<img src="img/map-mini.jpg" width="560" height="222" alt="Ул. Строителей, 1Б">
+			</a>
+			
+			<button type="button" class="link-button link-contacts">Напишите нам</button>
 		</section>
 	
 	</main>
@@ -320,13 +319,13 @@
 				
 				<button type="submit">Отправить</button>
 		</form>
-		<p class="login-close"><a href="#">X</a></p>
+		<button type="button" class="button-popap-out button-popap-out-write-us">X</button>
 	</section>
 	
-	<section class="map-modal">
+	<section class="map-popap">
 		<h2 class="visually-hidden">Всплывающая карта</h2>
 		<img src="img/map.jpg" width="960" height="559" alt="Карта">
-		<p class="map-modal-close"><a href="#">X</a></p>
+		<button type="button" class="button-popap-out-map">X</button>
 	</section>
 	
 </body>

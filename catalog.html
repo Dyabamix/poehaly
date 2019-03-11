@@ -16,10 +16,9 @@
 		
 		<div>
 		<h2 class="visually-hidden">Поиск по сайту</h2>
-		<!--Здесь будет форма-->
 			<form action="#" class="search">
 				<input type="search" placeholder="Поиск по сайту">
-				<button type="submit">Поиск</button>
+				<button type="submit" class="button-search">Поиск</button>
 			</form>
 		</div>
 		
@@ -77,34 +76,37 @@
 			
 			<div class="cost">
 				<h3>Стоимость</h3>
+				
+				<!--тут будет что-то-->
 			</div>
 
 			<form action="#" class="filter">
 				<div class="form-item-color">
 					<h3>Цвет</h3>
-					<input type="checkbox" name="black" id="black" checked>
+					<input type="checkbox" name="black" id="black" checked class="visually-hidden">
 					<label for="black">Черный</label>
 					
-					<input type="checkbox" name="white" id="white">
+					<input type="checkbox" name="white" id="white" class="visually-hidden">
 					<label for="white">Белый</label>
 					
-					<input type="checkbox" name="blue" id="blue" checked>
+					<input type="checkbox" name="blue" id="blue" checked class="visually-hidden">
 					<label for="blue">Синий</label>
 					
-					<input type="checkbox" name="red" id="red" checked>
+					<input type="checkbox" name="red" id="red" checked class="visually-hidden">
 					<label for="red">Красный</label>
 					
-					<input type="checkbox" name="pink" id="pink">
+					<input type="checkbox" name="pink" id="pink" class="visually-hidden">
 					<label for="black">Розовый</label>
 				</div>
 				
 				<div class="form-item-bluetooth">
+					<h3 class="form-item-bluetooth-title">Bluetooth</h3>
 					<input type="radio" name="bluetooth" id="there-is" value="1" checked>
 					<label for="there-is">Есть</label>
 					<input type="radio" name="bluetooth" id="not" value="0">
 					<label for="not">Нет</label>
 				</div>
-				<button type="submit" class="button-show">Показать</button>
+				<button type="submit" class="link-button button-show">Показать</button>
 			</form>
 			
 		</section>
@@ -113,16 +115,16 @@
 
 			<h2 class="product-scroll-title">Сортировка:</h2>
 				
-			<ul class="product-scroll-sorting">
-				<li class="product-scroll-sorting-item"><a href="#" >По цене</a></li>
-				<li class="product-scroll-sorting-item"><a href="#">По типу</a></li>
-				<li class="product-scroll-sorting-item"><a href="#">По популярности</a></li>
-			</ul>
+			<p class="product-scroll-sorting">
+				<a href="#" >По цене</a>
+				<a href="#">По типу</a>
+				<a href="#">По популярности</a>
+			</p>
 			
-			<ul class="product-scroll-sorting-up-down">
-				<li class="product-scroll-sorting-up-down-item"><a href="#">/\</a></li>
-				<li class="product-scroll-sorting-up-down-item"><a href="#">\/</a></li>
-			</ul>
+			<p class="product-scroll-sorting-up-down">
+				<button type="button" aria-label="По возрастанию">/\</button>
+				<button type="button" aria-label="По убыванию">\/</button>
+			</p>
 				
 			<section class="product-scroll-page">
 				<h2 class="visually-hidden">Каталог товаров</h2>
@@ -137,8 +139,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -159,8 +161,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -180,8 +182,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -201,8 +203,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 									
@@ -226,8 +228,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -247,8 +249,8 @@
 								</p>
 								
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -268,8 +270,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -289,8 +291,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -313,8 +315,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -334,8 +336,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -355,8 +357,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -376,8 +378,8 @@
 								</p>
 									
 								<div class="product-scroll-item-hover">
-									<a href="#" class="bottom">В корзину</a>
-									<a href="#" class="bottom-compare">Добавить к сравнению</a>
+									<button class="button">В корзину</button>
+									<button class="button-compare">Добавить к сравнению</button>
 								</div> 
 									
 								<h3 class="product-scroll-item-title">
@@ -391,17 +393,17 @@
 					</li>
 				</ul>
 				
-				<ul class="product-scroll-nav">
-					<li class="product-scroll-nav-down"><a href="#">Назад</a></li>
+				<p class="product-scroll-nav">
+					<button class="product-scroll-nav-back" type="button">Назад</button>
+					
+					<span class="product-scroll-nav-nam-list">
+						<button class="product-scroll-nav-nam" type="button" aria-label="Первая страница с товарами">1</button>
+						<button class="product-scroll-nav-nam" type="button" aria-label="Вторая страница с товарами">2</button>
+						<button class="product-scroll-nav-nam" type="button" aria-label="Третья страница с товарами">3</button>
+					</span>
 						
-					<li class="product-scroll-nav-nam"><a href="#">1</a></li>
-						
-					<li class="product-scroll-nav-nam"><a href="#">2</a></li>
-						
-					<li class="product-scroll-nav-nam"><a href="#">3</a></li>
-						
-					<li class="product-scroll-nav-up"><a href="#">Вперед</a></li>
-				</ul>
+					<button class="product-scroll-nav-next" type="button">Вперед</button>
+				</p>
 					
 			</section>
 		</section>
